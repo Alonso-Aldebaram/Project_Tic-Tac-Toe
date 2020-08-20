@@ -46,7 +46,7 @@ export default class Juego extends Component {
             const desc = move ? 'Regresar al turno #' + move : 'Comenzar el juego';
             return (
                 <li key={move}>
-                    <button onClick={() => { this.jumpTo(move) }}>
+                    <button className="comenzar" onClick={() => { this.jumpTo(move) }}>
                         {desc}
                     </button>
                 </li>
@@ -73,7 +73,7 @@ export default class Juego extends Component {
                 </div>
                 <div className="info-juego">
                     <div>{status}</div>
-                    <ul>{moves}</ul>
+                    <ul className="movimientos">{moves}</ul>
                 </div>
             </div>
             </>
