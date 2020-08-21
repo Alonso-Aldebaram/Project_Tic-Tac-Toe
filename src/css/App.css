@@ -81,3 +81,6 @@ ol, ul {
   border: none;
   box-shadow: #222338 4px 4px 10px 1px;
 }
+ul.movimientos {
+  padding: 0px;
+}
